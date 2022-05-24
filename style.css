@@ -1,0 +1,392 @@
+@font-face {
+	font-family: 'FontRegular';
+	src: url('./font/Eczar-Regular.ttf');
+	src: local('Eczar-Regular'), url('./font/Eczar-Regular.ttf') format('ttf'),
+		url('./font/Eczar-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'FontMedium';
+	src: url('./font/Eczar-Medium.ttf');
+	src: local('Eczar-Medium'), url('./font/Eczar-Medium.ttf') format('ttf'),
+		url('./font/Eczar-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'FontSemiBold';
+	src: url('./font/Eczar-SemiBold.ttf');
+	src: local('Eczar-SemiBold'),
+		url('./font/Eczar-SemiBold.ttf') format('ttf'),
+		url('./font/Eczar-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'FontBold';
+	src: url('./font/Eczar-Bold.ttf');
+	src: local('Eczar-Bold'), url('./font/Eczar-Bold.ttf') format('ttf'),
+		url('./font/Eczar-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'FontExtraBold';
+	src: url('./font/Eczar-ExtraBold.ttf');
+	src: local('Eczar-ExtraBold'),
+		url('./font/Eczar-ExtraBold.ttf') format('ttf'),
+		url('./font/Eczar-ExtraBold.ttf') format('truetype');
+}
+
+body {
+	background-color: #ffffff;
+	padding: 1rem;
+	margin: 0rem;
+	color: #004d3d;
+	font-family: FontMedium;
+	font-size: 1rem;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.mb-sm {
+	margin-bottom: 1rem;
+}
+
+.mb-esm {
+	margin-bottom: 0.5rem;
+}
+
+.main {
+	background-image: url('images/ganesh-bg-1.jpeg');
+	background-size: 100% 100%;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+	margin: auto;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	border-radius: 12px;
+	animation: flipOutY;
+	animation-duration: 2s;
+	animation-delay: 6s;
+}
+
+.ganesh-container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	animation: fadeIn;
+	animation-duration: 5s;
+}
+
+.ganesh-text {
+	font-size: 1.5rem;
+	color: #004d3d;
+	margin-bottom: 1.5rem;
+}
+
+.ganesh-text-small {
+	font-size: 1rem;
+	font-family: FontMedium;
+	color: #004d3d;
+}
+
+.ganesh-text-last {
+	margin-bottom: 1.5rem;
+}
+
+.ganesh-image {
+	height: 12rem;
+	width: 10rem;
+}
+
+#content {
+	display: none;
+	height: 100%;
+	width: 100%;
+	background-image: url('images/balloons-bg.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	animation: fadeIn;
+	animation-duration: 5s;
+	padding: 1.5rem;
+}
+
+.glass-container {
+	height: 100%;
+	padding: 1rem;
+	background: rgba(230, 255, 230, 0.53);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5.8px);
+	-webkit-backdrop-filter: blur(5.8px);
+	border: 1px solid rgba(230, 255, 230, 0.16);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title {
+	font-size: 2rem;
+	font-family: FontExtraBold;
+	color: #004d3d;
+	text-align: center;
+}
+
+.title-small {
+	font-size: 1rem;
+	font-family: FontSemiBold;
+	color: #004d3d;
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
+
+.flower {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	z-index: 1;
+	position: absolute;
+	top: -20%;
+}
+.petal {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	z-index: -1;
+}
+.petal1 {
+	position: relative;
+	left: -70%;
+	top: 20%;
+}
+.petal2 {
+	position: relative;
+	top: -18%;
+	left: -5%;
+}
+.petal3 {
+	position: relative;
+	top: -170%;
+	left: 72%;
+}
+.petal4 {
+	position: relative;
+	top: -363%;
+	left: -30%;
+}
+.petal5 {
+	position: relative;
+	top: -450%;
+	left: 53%;
+}
+
+#flower1 {
+	background-color: yellow;
+	position: absolute;
+	left: 8%;
+	animation-name: rain;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.f1p {
+	background-color: pink;
+}
+
+#flower2 {
+	background-color: orange;
+	position: absolute;
+	left: 25%;
+	animation-name: rain;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-delay: 1.5s;
+}
+.f2p {
+	background-color: yellow;
+}
+#flower3 {
+	background-color: red;
+	position: absolute;
+	left: 42%;
+	animation-name: rain;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+}
+.f3p {
+	background-color: skyblue;
+}
+#flower4 {
+	background-color: cyan;
+	position: absolute;
+	left: 59%;
+	animation-name: rain;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-delay: 2.5s;
+}
+.f4p {
+	background-color: blue;
+}
+
+#flower5 {
+	background-color: green;
+	position: absolute;
+	left: 75%;
+	animation-name: rain;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+	animation-delay: 3s;
+}
+.f5p {
+	background-color: lightgreen;
+}
+
+#flower6 {
+	background-color: magenta;
+	position: absolute;
+	left: 90%;
+	animation-name: rain;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+	animation-delay: 4.5s;
+}
+.f6p {
+	background-color: turquoise;
+}
+
+@keyframes rain {
+	0% {
+		transform: rotate(0deg);
+		top: -10%;
+	}
+	100% {
+		transform: rotate(720deg);
+		top: 100vh;
+	}
+}
+
+.photo {
+	width: 11rem;
+	height: 12rem;
+	margin-bottom: 2rem;
+	margin-top: 1rem;
+	border-radius: 50%;
+	background-image: url('images/tuktuk.jpg');
+	background-size: 100% 100%;
+	-webkit-box-shadow: -4px 15px 38px -3px rgba(0, 77, 61, 0.68);
+	-moz-box-shadow: -4px 15px 38px -3px rgba(0, 77, 61, 0.68);
+	box-shadow: -4px 15px 38px -3px rgba(0, 77, 61, 0.68);
+	animation: backInDown;
+	animation-delay: 1s;
+	animation-duration: 4s;
+}
+
+.title-container {
+	animation: backInDown;
+	animation-delay: 1s;
+	animation-duration: 4s;
+}
+
+.date {
+	font-size: 1.25rem;
+	color: #004d3d;
+	margin-bottom: 1.5rem;
+	font-family: FontSemiBold;
+}
+
+.card-content {
+	text-align: center;
+	animation: fadeInUpBig 5s 1s, fadeOutDown 4s 15s;
+}
+
+.minor-text {
+	font-size: 1rem;
+	line-height: 2rem;
+}
+
+.gp-names {
+	font-family: FontBold;
+	white-space: nowrap;
+}
+
+.name {
+	font-size: 1.5rem;
+	font-family: FontBold;
+	margin-bottom: 0.5rem;
+	margin-top: 0.5rem;
+}
+
+.p-names {
+	font-family: FontBold;
+	white-space: nowrap;
+	margin-bottom: 0.5rem;
+}
+
+.venue-content {
+	display: none;
+	text-align: center;
+	animation: fadeInUpBig 5s, fadeOutDown 4s 12s;
+	width: 100%;
+	padding: 0rem 2rem;
+}
+
+.row-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 0.5rem;
+}
+
+.row {
+	font-size: 1.25rem;
+}
+
+.venue {
+	border: 1px dashed #004d3d;
+	border-radius: 12px;
+	padding: 1rem;
+	margin-top: 1rem;
+}
+
+.venue-name {
+	font-size: 1.5rem;
+	font-family: FontBold;
+}
+
+.people-content {
+	display: none;
+	width: 100%;
+	text-align: center;
+	animation: fadeInUpBig 5s, fadeOutDown 4s 10s;
+}
+
+.people-title {
+	font-family: FontSemiBold;
+}
+
+.people {
+	width: 18rem;
+	padding: 1rem 1.5rem;
+	border-radius: 12px;
+	margin: auto;
+}
+
+.welcome-content {
+	display: none;
+	width: 100%;
+	animation: fadeInUpBig 5s;
+}
+
+.welcome-container {
+	width: 100%;
+	text-align: center;
+	font-size: 1.5rem;
+	padding: 1rem;
+}
